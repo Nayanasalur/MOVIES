@@ -3,7 +3,7 @@ package com.kirilo.sqlite.jdbc;
 import java.sql.*;
 
 public class Sample {
-    private static final String SQL = "SELECT * from dir_Make";
+    private static final String SQL = "SELECT * from MOVIES";
     private static ResultSet resultSet;
     private static Statement statement;
     private static Connection connection;
@@ -12,7 +12,7 @@ public class Sample {
     public static void main(String[] args) {
         try {
             Driver driver = (Driver) Class.forName("org.sqlite.JDBC").newInstance();
-            connection = DriverManager.getConnection("jdbc:sqlite:D:/Downloads/Батиршинов/3.Базы данных и SQL в Java/CarShop.db");
+            connection = DriverManager.getConnection("jdbc:sqlite:D:/Downloads/SQL в MOVIES.db");
             statement = connection.createStatement();
             resultSet = statement.executeQuery(SQL);
 
