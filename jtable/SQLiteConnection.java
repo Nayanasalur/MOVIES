@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 public class SQLiteConnection {
     private static Connection connection;
     private static Driver driver;
-    private static final String URL = "jdbc:sqlite:D:/Downloads/Батиршинов/3.Базы данных и SQL в Java/MOVIES.db";
+    private static final String URL = "jdbc:sqlite:D:/Downloads/SQL в Java/MOVIES.db";
 
     public static Connection getConnection() {
         if (connection == null) {
